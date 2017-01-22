@@ -16,10 +16,6 @@
 3. For css styling, I am using inline styles for each component since there are not a lot of rules and readers would be able to spot the rules immediately in the componenet
 4. Since the page does not have a lot of components, I put all the components in one file for easy readability and searchability
 
-##Missing Piece
-
-- I was unable to center the search bar and the pagination components using **auto** on the **marginLeft** and **marginRight** properties
-
 
 
 
