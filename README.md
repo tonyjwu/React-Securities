@@ -18,7 +18,7 @@
 
 ##Missing Piece:
 
-- Unable to center search bar and pagination component using the **auto** properties of the **marginLeft** and **marginRight** properties 
+- Unable to center search bar and pagination components using the **auto** properties of the **marginLeft** and **marginRight** properties 
 
 
 
