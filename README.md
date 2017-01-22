@@ -1,4 +1,6 @@
-#Instructions:
+#React-Securities:
+
+##Instructions:
 
 1. Clone the repository
 2. cd into React-Securities
