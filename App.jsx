@@ -60,7 +60,7 @@ class Header1 extends React.Component {
    render() {
       return (
   		<div>
-        	<h1 style={{display: 'inline'}}>Market</h1>
+        	<h1>Market</h1>
         </div>
       );
    }
@@ -93,7 +93,7 @@ class InlineElements extends React.Component {
       return (
       	  	<div className = 'InlineElements' style = {{display:'inline-block', 'marginTop' : '20px', 'width': '100%'}}>
       	  	      <h3 style={{display: 'inline'}}>Secondary Levels</h3>
-			      <div className = 'inputBox' style= {{display:'inline-block', 'float': 'none', 'width': '500px', 'marginLeft': 'auto', 'marginRight': 'auto'}}>
+			      <div className = 'inputBox' style= {{display:'inline-block', 'float': 'none', 'width': '500px', 'marginLeft': 'auto', 'marginRight': 'auto'}/*setting marginLeft and marginRight does not center div somehow :(*/}>
 				      <form>
 				        <FormGroup controlId="formBasicText">
 				          <FormControl
@@ -201,7 +201,8 @@ class PaginationButtons extends React.Component {
 
       const paginationStyle = {
 		  marginTop : '10px',
-		  marginLeft : 'auto',
+		  float : 'none',
+		  marginLeft : 'auto', //setting marginLeft and marginRight does not center div somehow :(
 		  marginRight : 'auto',
       }
 
