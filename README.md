@@ -18,4 +18,4 @@
 
 ##Missing Piece
 
-- Unable to center search bar and pagination components using the **auto** value of the **marginLeft** and **marginRight** properties. Tried **textAlign:center** but unsuccessful as well 
+- Unable to center-align search bar and pagination components using the **auto** value of the **marginLeft** and **marginRight** properties. Tried **textAlign:center** but unsuccessful as well 
