@@ -45,7 +45,7 @@ class App extends React.Component {
            	<div className ='table' style ={tableStyle}>
 	            <Table striped condensed>
 	      		   <TableHeader/>
-	               <tbody style = {{ 'borderCollapse': 'separate', 'borderSpacing': '5px 5px'}}>
+	               <tbody>
 	                  {this.state.securities.map((security, i) => <TableRow key = {i} index = {i} info = {security} length = {this.state.securities.length} />)}
 	               </tbody>
 	            </Table>
@@ -93,7 +93,7 @@ class InlineElements extends React.Component {
       return (
       	  	<div className = 'InlineElements' style = {{display:'inline-block', 'marginTop' : '20px', 'width': '100%'}}>
       	  	      <h3 style={{display: 'inline'}}>Secondary Levels</h3>
-			      <div className = 'inputBox' style= {{display:'inline-block', 'width': '500px', 'marginLeft': '400px'}}>
+			      <div className = 'inputBox' style= {{display:'inline-block', 'float': 'none', 'width': '500px', 'marginLeft': 'auto', 'marginRight': 'auto'}}>
 				      <form>
 				        <FormGroup controlId="formBasicText">
 				          <FormControl
@@ -108,7 +108,7 @@ class InlineElements extends React.Component {
 		      			Filter
 		    		  </Button>
 	    		  </div>
-			      <div className = 'UploadDownloadButtons' style = {{display:'inline-block', 'float': 'right'}}>
+			      <div className = 'UploadDownloadButtons' style = {{display:'inline-block', 'float' : 'right'}}>
 			        <ButtonGroup>
 						<Button><i style = {{'marginRight': '10px'}}className="fa fa-upload" aria-hidden="true"></i>Upload</Button>
 						<Button><i style = {{'marginRight': '10px'}}className="fa fa-download" aria-hidden="true"></i>Download</Button>
@@ -192,32 +192,34 @@ class TableRow extends React.Component {
             <td>{this.props.info.readableTimestamp}<i style = {{'marginLeft': '40px'}} className="fa fa-bar-chart" aria-hidden="true"></i></td>
          </tr>
       );
-   }
+    }
 }
 
 
 class PaginationButtons extends React.Component {
    render() {
+
       const paginationStyle = {
-      		marginLeft : '700px',
-      		marginTop : '5px'
+		  marginTop : '10px',
+		  marginLeft : 'auto',
+		  marginRight : 'auto',
       }
 
       return (
-      	  	<div className="pagination" style={paginationStyle}>
-		      <Pagination
-		        prev
-		        next
-		        first
-		        last
-		        ellipsis
-		        boundaryLinks
-		        items={10}
-		        maxButtons={6}
-		      />
+	  	  	<div className="pagination" style={paginationStyle}>
+			      <Pagination
+			        prev
+			        next
+			        first
+			        last
+			        ellipsis
+			        boundaryLinks
+			        items={10}
+			        maxButtons={6}
+			      />
 		  	</div>
 	    )
-   }
+    }
 }
 
 export default App;
