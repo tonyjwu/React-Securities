@@ -13,7 +13,7 @@
 
 1. For accessing the data API, I used the axios framework because it provides a simple interface
 2. For UI components, I used react-boostrap because it provides a vast variety of components with great looks and feel
-3. For css styling, I used inline styles inside of each component since there are not a lot of rules and readers would be able to spot the rules immediately in the component
+3. For css styling, I used inline styles inside of each component since there aren't a lot of rules and the readers would be able to spot the rules immediately in the component
 4. Since the page does not have a lot of components, I put all the components in one file for easy readability and searchability
 
 
