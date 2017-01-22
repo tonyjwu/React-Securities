@@ -7,7 +7,7 @@
 3. Run npm install
 4. Run npm start
 5. The app will be served on https://localhost:8080 
-   - If port 8080 is used, please use a different port number by changing the 'port' property in {{webpack.config.js}}
+   - If port 8080 is used, please use a different port number by changing the 'port' property in **webpack.config.js**
    
 ##Design Approaches
 
@@ -18,7 +18,7 @@
 
 #Missing Piece
 
-- I was unable to center the search bar and the pagination component using 'auto' values on the 'margin
+- I was unable to center the search bar and the pagination component using **auto** values on the **marginLeft** and **marginRight** properties
 
 
 
